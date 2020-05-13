@@ -5,4 +5,13 @@
       Production
     .index__top__down
   .index__main
+    .index__main__photo
+      =link_to "https://memoapp1000.herokuapp.com/", class:"memoapp-link",onmouseover:"mouseover1();" ,onmouseout:"mouseout1()" do
+        = image_tag('memoapp.png',class:"memoapp-photo")
+      =link_to "http://18.180.203.124/", class:"mygame-link" do
+        = image_tag('memoapp.png',class:"mygame-photo")    
 
+= render "footer"
+
+%script
+  
