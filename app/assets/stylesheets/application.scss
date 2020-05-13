@@ -1,0 +1,14 @@
+@import "reset";
+// resetCSS用
+@import "font-awesome-sprockets";
+@import "font-awesome";
+// アイコン用
+
+
+@import "header";
+@import "posts/index";
+
+
+* {
+  box-sizing: border-box;
+}

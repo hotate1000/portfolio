@@ -1,0 +1,16 @@
+.index{
+  padding-top:150px;
+  background-image: url(haimen.jpg);
+
+  height: 100vh;
+  background-position: bottom, 50% 10%, center;
+  background-size: cover;
+  &__top{
+    &__up{
+      font-family:fantasy;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
