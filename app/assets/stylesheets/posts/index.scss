@@ -4,18 +4,17 @@
   &__top{
     &__up{
       font-family:fantasy;
-      font-size: 40px;
+      font-size: 45px;
       display: flex;
       justify-content: center;
     }
   }
   
 
-
-
   @media screen and (min-width:0px)  and ( max-width:800px){
   // 幅が小さい
     &__main{
+      margin-top: 30px;  
       &__photo{
         max-width: 1000px;    
         &__box1{
@@ -46,10 +45,11 @@
     }
   }
 
+
   @media screen and (min-width:800px){
   // 幅が大きい
     &__main{
-      margin-top: 20px;
+      margin-top: 30px;
       &__photo{
         display: flex;
         justify-content: center;
@@ -58,16 +58,16 @@
         &__box1{
           margin-right: 60px;
           .memoapp-photo{
-            width: 380px;
-            height: 220px;
+            width: 350px;
+            height: 200px;
             box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
             // border-radius: 3px;         
           }
         }
         &__box2{
           .mygame-photo{
-            width: 380px;
-            height: 220px;
+            width: 350px;
+            height: 200px;
             box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
             // border-radius: 3px;
           }
@@ -75,6 +75,8 @@
       }
     }
   }
+
+
         .memoapp-photo:hover{
           transition: 0.3s;
           // transform: translateX(-3px);

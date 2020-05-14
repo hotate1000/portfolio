@@ -1,33 +1,37 @@
-@media screen and (min-width:0px){ 
- .header{
-    min-width: 800px;
-    padding:40px;
-    background-color: rgba(255, 255, 255, 0.7);
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    &__box{
-      font-size: 30px;
-      min-width: 800px;
+@media screen and (min-width:0px)  and ( max-width:800px){
+  // 幅が小さい
+}
+
+@media screen and (min-width:800px){
+  // 幅が大きい
+}
+
+.header{
+padding:20px;
+background-color: rgba(255, 255, 255, 0.7);
+position: fixed;
+width: 100%;
+display: flex;
+justify-content: center;
+&__box{
+  min-width: 800px;
+  font-family:'Times New Roman';
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+    &__production{
+      margin-right: 30px;
+      &__letter{
+        text-decoration: none;
+        color: black;
+      }
+    }
+    &__introduction{
+      &__letter{
+        text-decoration: none;
+        color: black;
+      }
     }
   }
 }
 
-@media screen and (min-width:800px){ 
-  .header{
-     min-width: 800px;
-     padding:40px;
-     background-color: rgba(255, 255, 255, 0.7);
-     position: fixed;
-     width: 100%;
-     display: flex;
-     justify-content: center;
-     margin: 0 auto; 
-     &__box{
-       font-size: 30px;
-       min-width: 800px;
-     }
-   }
- }
