@@ -67,3 +67,5 @@ gem 'haml-rails'
 # hamlに変更する
 gem 'font-awesome-sass'
 # アイコン用のgem
+gem 'jquery-rails'
+# jqueryの実証

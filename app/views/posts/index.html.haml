@@ -6,12 +6,28 @@
     .index__top__down
   .index__main
     .index__main__photo
-      =link_to "https://memoapp1000.herokuapp.com/", class:"memoapp-link",onmouseover:"mouseover1();" ,onmouseout:"mouseout1()" do
+      =link_to "https://memoapp1000.herokuapp.com/", class:"memoapp-link",id:"memoapp-link",onmouseover:"mouseover1(); mouseover2();" do
         = image_tag('memoapp.png',class:"memoapp-photo")
-      =link_to "http://18.180.203.124/", class:"mygame-link" do
+      =link_to "http://18.180.203.124/", class:"mygame-link",id:"mygame-link",onmouseover:"mouseover3();" do
         = image_tag('memoapp.png',class:"mygame-photo")    
 
 = render "footer"
 
-%script
-  
+:javascript
+  function mouseover1(){
+    document.getElementById("footer__box__left").innerHTML = 
+      '<img src="images/memoapp.png" alt="サンプル画像" class="footer__box__left">'
+  }
+  function mouseover2(){
+    document.getElementById("footer__box__right").innerHTML = 
+      '<p class="aa">aaaa</p>'
+  }
+  function mouseover3(){
+    document.getElementById("footer__box").innerHTML = 
+        '<div class="footer__box__left" id="footer__box__left">' +
+          '<img src="images/memoapp.png" alt="サンプル画像" class="footer__box__left">' +
+        '</div>' +
+        '<div class="footer__box__right" id="footer__box__right">' +
+          '<img src="images/memoapp.png" alt="サンプル画像" class="footer__box__right">' +
+        '</div>' 
+  }

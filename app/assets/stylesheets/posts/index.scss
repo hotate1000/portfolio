@@ -55,6 +55,13 @@
           width: 400px;
           height: 250px;
         }
+
+        .memoapp-photo:hover{
+          // background: #3cc4bd;
+          // box-shadow: 0 3px 0 #12978d, 0 6px 0 rgba(0,0,0,.2);
+          transform: translateY(3px);
+
+        }
       }
     }
   }
