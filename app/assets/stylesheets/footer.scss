@@ -16,17 +16,22 @@
       max-width: 1000px;
       margin-top: 20px;
       &__left{
-        background-color: green;
-        padding:20px 30px 0 0;
+        // background-color: green;
         width: 450px;
         height: 290px;
         margin-right: 60px;
       }
       &__right{
-        background-color: blue;
-        padding:20px 30px 0 0;
+        // background-color: blue;
+        // padding: 10px;
+        // border: 2px solid;
+        // border-radius: 5px;
         width: 450px;
         height: 290px;
+        font-size: 19px;
+        font-family: 'Osaka-Mono';
+        letter-spacing: 0.05em;
+        line-height: 24px;
       }
     }
   }
