@@ -15,11 +15,12 @@
 
 
       .index__main__photo__box1
-        =link_to "https://memoapp1000.herokuapp.com/", class:"memoapp-link",id:"memoapp-link",onmouseover:"mouseover3();",onmouseout:"mouseout3();" do
-          = image_tag('chatapplogo.png',class:"memoapp-photo")
+        =link_to "http://18.177.177.39/", class:"memoapp-link",id:"memoapp-link",onmouseover:"mouseover3();",onmouseout:"mouseout3();" do
+          = image_tag('furimalogo.png',class:"memoapp-photo")
       .index__main__photo__box2
-        =link_to "http://18.177.177.39/", class:"mygame-link",id:"mygame-link",onmouseover:"mouseover4();",onmouseout:"mouseout4();" do
-          = image_tag('furimalogo.png',class:"mygame-photo")    
+        -# =link_to "https://memoapp1000.herokuapp.com/", class:"mygame-link",id:"mygame-link",onmouseover:"mouseover4();",onmouseout:"mouseout4();" do
+          -# = image_tag('chatapplogo.png',class:"mygame-photo")    
+        .box_kara
 
 
 
@@ -64,26 +65,7 @@
   }
 
   
-
-
   function mouseover3(){
-    document.getElementById("footer__box").innerHTML = 
-        '<div class="footer__box__left" id="footer__box__left">' +
-          '<img src="images/chatapp.png" alt="サンプル画像" class="footer__box__left">' +
-        '</div>' +
-        '<div class="footer__box__right" id="footer__box__right">' +
-          '<p class="footer__box__right">チャットアプリ：<br>プログラミングスクールで作成したアプリです。<br>チャットグループを作成し、グループメンバーでチャットを行うことができます。<br><br>テストアドレス：tesuto@mail<br>テストパスワード：tesuto</p>'  +
-        '</div>' 
-  }
-  function mouseout3(){
-    document.getElementById("footer__box").innerHTML = 
-        '<div class="footer__box__left" id="footer__box__left">' +
-        '</div>' +
-        '<div class="footer__box__right" id="footer__box__right">' +
-        '</div>' 
-  }
-
-  function mouseover4(){
     document.getElementById("footer__box").innerHTML = 
         '<div class="footer__box__left" id="footer__box__left">' +
           '<img src="images/furima.jpg" alt="サンプル画像" class="footer__box__left">' +
@@ -92,11 +74,30 @@
           '<p class="footer__box__right">フリマアプリ：<br>プログラミングスクールでチーム開発したアプリです。<br>商品の出品、購入等を行う事が出来ます。<br><br>basic認証ユーザー：hoge<br>basic認証パスワード：1111<br><br>テストアドレス：seller@gmail.com<br>テストパスワード：aaaaaa1</p>' +
         '</div>' 
   }
-    function mouseout4(){
+    function mouseout3(){
     document.getElementById("footer__box").innerHTML = 
         '<div class="footer__box__left" id="footer__box__left">' +
         '</div>' +
         '<div class="footer__box__right" id="footer__box__right">' +
         '</div>' 
   }
+
+
+//  function mouseover4(){
+//    document.getElementById("footer__box").innerHTML = 
+//        '<div class="footer__box__left" id="footer__box__left">' +
+//          '<img src="images/chatapp.png" alt="サンプル画像" class="footer__box__left">' +
+//        '</div>' +
+//        '<div class="footer__box__right" id="footer__box__right">' +
+//          '<p class="footer__box__right">チャットアプリ：<br>プログラミングスクールで作成したアプリです。<br>チャットグループを作成し、グループメンバーでチャットを行うことができます。<br><br>テストアドレス：tesuto@mail<br>テストパスワード：tesuto</p>'  +
+//        '</div>' 
+//  }
+//  function mouseout4(){
+//    document.getElementById("footer__box").innerHTML = 
+//        '<div class="footer__box__left" id="footer__box__left">' +
+//        '</div>' +
+//        '<div class="footer__box__right" id="footer__box__right">' +
+//        '</div>' 
+//  }
+
 
