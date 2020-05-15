@@ -69,3 +69,7 @@ gem 'font-awesome-sass'
 # アイコン用のgem
 gem 'jquery-rails'
 # jqueryの実証
+
+group :production do
+  gem 'pg'
+end
