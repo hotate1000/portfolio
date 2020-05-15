@@ -47,7 +47,6 @@
   @media screen and (min-width:800px){
   // 幅が大きい
     &__main{
-      margin-top: 30px;
       &__photo{
         display: flex;
         justify-content: center;
@@ -55,6 +54,7 @@
         max-width: 1000px;
         flex-wrap: wrap;
         &__box1{
+          margin: 20px 0 20px 0;
           margin-right: 60px;
           .memoapp-photo{
             width: 350px;
@@ -63,6 +63,7 @@
           }
         }
         &__box2{
+          margin: 20px 0 20px 0;
           .mygame-photo{
             width: 350px;
             height: 200px;

@@ -13,6 +13,19 @@
         =link_to "http://18.180.203.124/", class:"mygame-link",id:"mygame-link",onmouseover:"mouseover2();",onmouseout:"mouseout2();" do
           = image_tag('mygamelogo.png',class:"mygame-photo")    
 
+
+      .index__main__photo__box1
+        =link_to "https://memoapp1000.herokuapp.com/", class:"memoapp-link",id:"memoapp-link",onmouseover:"mouseover3();",onmouseout:"mouseout3();" do
+          = image_tag('chatapplogo.png',class:"memoapp-photo")
+      .index__main__photo__box2
+        =link_to "http://18.177.177.39/", class:"mygame-link",id:"mygame-link",onmouseover:"mouseover4();",onmouseout:"mouseout4();" do
+          = image_tag('furimalogo.png',class:"mygame-photo")    
+
+
+
+
+
+
 = render "footer"
 
 :javascript
@@ -22,7 +35,7 @@
           '<img src="images/memoapp.png" alt="サンプル画像" class="footer__box__left">' +
         '</div>' +
         '<div class="footer__box__right" id="footer__box__right">' +
-          '<p class="footer__box__right">メモアプリ：<br>日々の予定を管理できればと思い作成しました。<br>ログイン後、トップページに登録した予定のデータが一覧表示されます。<br>オレンジ色のボタンでユーザー情報の編集、青色のボタンで予定の編集を行うことができます。<br><br>テストアドレス：tesuto@<br>テストパスワード：tesuto</p>' +
+          '<p class="footer__box__right">メモアプリ：<br>日々の予定を管理できればと思い作成しました。<br>ログイン後、トップページに登録した予定のデータが一覧表示されます。<br>オレンジ色のボタンでユーザー情報の編集、青色のボタンで予定の編集を行うことができます。<br><br>テストアドレス：tesuto@mail<br>テストパスワード：tesuto</p>' +
         '</div>' 
   }
   function mouseout1(){
@@ -39,8 +52,51 @@
           '<img src="images/mygame.png" alt="サンプル画像" class="footer__box__left">' +
         '</div>' +
         '<div class="footer__box__right" id="footer__box__right">' +
-          '<p class="footer__box__right">ミニゲームアプリ：<br>未経験から勉強していく中で、JSを活用すると簡単なゲームを作成できることを知り、知人にシステム関係の勉強をすると短期間でもこような事が出来るよと身近に感じて欲しく、楽しく遊べるゲームアプリを作成してみたいと思い作成しました。 <br>ゲーム一覧画面でゲームを選択するとプレイする事ができます。<br><br>ログインユーザー：hogehoge<br>ログインパスワード：11111111</p>' +
+          '<p class="footer__box__right">ミニゲームアプリ：<br>未経験から勉強していく中で、JSを活用すると簡単なゲームを作成できることを知り、知人にシステム関係の勉強をすると短期間でもこような事が出来るよと身近に感じて欲しく、楽しく遊べるゲームアプリを作成してみたいと思い作成しました。 <br>ゲーム一覧画面でゲームを選択するとプレイする事ができます。<br><br>basic認証ユーザー名：hogehoge<br>basic認証パスワード：11111111</p>' +
+        '</div>' 
+  }
+    function mouseout2(){
+    document.getElementById("footer__box").innerHTML = 
+        '<div class="footer__box__left" id="footer__box__left">' +
+        '</div>' +
+        '<div class="footer__box__right" id="footer__box__right">' +
         '</div>' 
   }
 
   
+
+
+  function mouseover3(){
+    document.getElementById("footer__box").innerHTML = 
+        '<div class="footer__box__left" id="footer__box__left">' +
+          '<img src="images/chatapp.png" alt="サンプル画像" class="footer__box__left">' +
+        '</div>' +
+        '<div class="footer__box__right" id="footer__box__right">' +
+          '<p class="footer__box__right">チャットアプリ：<br>プログラミングスクールで作成したアプリです。<br>チャットグループを作成し、グループメンバーでチャットを行うことができます。<br><br>テストアドレス：tesuto@mail<br>テストパスワード：tesuto</p>'  +
+        '</div>' 
+  }
+  function mouseout3(){
+    document.getElementById("footer__box").innerHTML = 
+        '<div class="footer__box__left" id="footer__box__left">' +
+        '</div>' +
+        '<div class="footer__box__right" id="footer__box__right">' +
+        '</div>' 
+  }
+
+  function mouseover4(){
+    document.getElementById("footer__box").innerHTML = 
+        '<div class="footer__box__left" id="footer__box__left">' +
+          '<img src="images/furima.jpg" alt="サンプル画像" class="footer__box__left">' +
+        '</div>' +
+        '<div class="footer__box__right" id="footer__box__right">' +
+          '<p class="footer__box__right">フリマアプリ：<br>プログラミングスクールでチーム開発したアプリです。<br>商品の出品、購入等を行う事が出来ます。<br><br>basic認証ユーザー：hoge<br>basic認証パスワード：1111<br><br>テストアドレス：seller@gmail.com<br>テストパスワード：aaaaaa1</p>' +
+        '</div>' 
+  }
+    function mouseout4(){
+    document.getElementById("footer__box").innerHTML = 
+        '<div class="footer__box__left" id="footer__box__left">' +
+        '</div>' +
+        '<div class="footer__box__right" id="footer__box__right">' +
+        '</div>' 
+  }
+
