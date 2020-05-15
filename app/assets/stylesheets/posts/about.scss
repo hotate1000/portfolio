@@ -1,0 +1,42 @@
+.about{
+  padding:150px 0 500px 0;
+  background-image: url(haimen.jpg);
+  &__top{
+    &__up{
+      font-family:fantasy;
+      font-size: 45px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__main{
+    margin-top: 30px;
+    &__text{
+      &__title{
+        padding:0 70px;
+        margin: 0 auto;
+        max-width: 1000px;
+        word-wrap: break-word; 
+        font-size: 20px;
+        font-weight: 600;      
+      }
+      &__letter{
+        padding:0 70px;
+        margin: 0 auto;
+        max-width: 1000px;
+        word-wrap: break-word; 
+        font-size: 16.5px;
+        &__link{
+          color: blue;
+          text-decoration: none;
+          background-color:  white;
+          display: inline-block;
+          border: 1px solid;
+          border-radius: 3px;
+          font-size: 14px;
+        }  
+      }
+    }
+  }
+}

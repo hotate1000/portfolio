@@ -1,32 +1,31 @@
 @media screen and (min-width:0px)  and ( max-width:800px){
   // 幅が小さい
   .footer{
-    min-width: 800px;
-    height: 330px;
+    height: 250px;
     position: fixed;
     width: 100%;
-    background-color: rgba(93, 216, 253, 0.5);
+    background-color: rgba(93, 216, 253, 0.4);
     bottom: 0;
     &__box{
       max-width: 700px;
+      word-wrap: break-word;
+      margin: 0 auto;
       &__left{
         width: 0px;
         height: 0px;
       }
       &__right{
-        padding: 10px 0 0 10px;
-        width: 550px;
-        height: 290px;
+        width: 100%;
+        padding: 10px;
         font-size: 19px;
         font-family: 'Osaka-Mono';
         letter-spacing: 0.05em;
         line-height: 24px;
+        word-wrap: break-word;
       }
     }
   }
 }
-
-
 
 @media screen and (min-width:800px){ 
 // 幅が大きい時
@@ -35,7 +34,7 @@
     height: 330px;
     position: fixed;
     width: 100%;
-    background-color: rgba(93, 216, 253, 0.5);
+    background-color: rgba(93, 216, 253, 0.4);
     bottom: 0;
     &__box{
       display: flex;
@@ -44,16 +43,11 @@
       max-width: 1000px;
       margin-top: 20px;
       &__left{
-        // background-color: green;
         width: 450px;
         height: 290px;
         margin-right: 60px;
       }
       &__right{
-        // background-color: blue;
-        // padding: 10px;
-        // border: 2px solid;
-        // border-radius: 5px;
         width: 450px;
         height: 290px;
         font-size: 19px;
