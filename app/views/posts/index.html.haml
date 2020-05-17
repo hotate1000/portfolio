@@ -9,23 +9,23 @@
       .index__main__photo__box1
         =link_to "https://memoapp1000.herokuapp.com/", class:"memoapp-link",id:"memoapp-link",onmouseover:"mouseover1();",onmouseout:"mouseout1();" do
           = image_tag('memoapplogo.png',class:"memoapp-photo")
+        .index__main__photo__box1__name.box_name
+          メモアプリ
       .index__main__photo__box2
         =link_to "http://18.180.203.124/", class:"mygame-link",id:"mygame-link",onmouseover:"mouseover2();",onmouseout:"mouseout2();" do
           = image_tag('mygamelogo.png',class:"mygame-photo")    
-
-
+        .index__main__photo__box2__name.box_name
+          ミニゲームアプリ     
+          
       .index__main__photo__box1
         =link_to "http://18.177.177.39/", class:"memoapp-link",id:"memoapp-link",onmouseover:"mouseover3();",onmouseout:"mouseout3();" do
           = image_tag('furimalogo.png',class:"memoapp-photo")
+        .index__main__photo__box1__name.box_name
+          フリマアプリ（スクール課題）
       .index__main__photo__box2
         -# =link_to "https://memoapp1000.herokuapp.com/", class:"mygame-link",id:"mygame-link",onmouseover:"mouseover4();",onmouseout:"mouseout4();" do
           -# = image_tag('chatapplogo.png',class:"mygame-photo")    
         .box_kara
-
-
-
-
-
 
 = render "footer"
 
