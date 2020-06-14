@@ -15,7 +15,7 @@
         =link_to "http://18.180.203.124/", class:"mygame-link",id:"mygame-link",onmouseover:"mouseover2();",onmouseout:"mouseout2();" do
           = image_tag('mygamelogo.png',class:"mygame-photo")          
         .index__main__photo__box2-letter__name.box_name
-          ミニゲームアプリ     
+          ミニゲームアプリ
           
       .index__main__photo__box1
         =link_to "http://18.177.177.39/", class:"memoapp-link",id:"memoapp-link",onmouseover:"mouseover3();",onmouseout:"mouseout3();" do
@@ -23,9 +23,15 @@
         .index__main__photo__box1__name.box_name
           フリマアプリ（スクール課題）
       .index__main__photo__box2
-        -# =link_to "https://memoapp1000.herokuapp.com/", class:"mygame-link",id:"mygame-link",onmouseover:"mouseover4();",onmouseout:"mouseout4();" do
-          -# = image_tag('chatapplogo.png',class:"mygame-photo")    
-        .box_kara
+        =link_to "https://muscle-training.herokuapp.com", class:"mygame-link",id:"mygame-link",onmouseover:"mouseover4();",onmouseout:"mouseout4();" do
+          = image_tag('logo4.png',class:"mygame-photo")          
+        .index__main__photo__box2-letter__name.box_name
+          初心者向け！筋トレのすすめ！
+
+      -# .index__main__photo__box2
+      -#   -# =link_to "https://memoapp1000.herokuapp.com/", class:"mygame-link",id:"mygame-link",onmouseover:"mouseover4();",onmouseout:"mouseout4();" do
+      -#     -# = image_tag('chatapplogo.png',class:"mygame-photo")    
+      -#   .box_kara
 
 = render "footer"
 
@@ -83,21 +89,21 @@
   }
 
 
-//  function mouseover4(){
-//    document.getElementById("footer__box").innerHTML = 
-//        '<div class="footer__box__left" id="footer__box__left">' +
-//          '<img src="images/chatapp.png" alt="サンプル画像" class="footer__box__left">' +
-//        '</div>' +
-//        '<div class="footer__box__right" id="footer__box__right">' +
-//          '<p class="footer__box__right">チャットアプリ：<br>プログラミングスクールで作成したアプリです。<br>チャットグループを作成し、グループメンバーでチャットを行うことができます。<br><br>テストアドレス：tesuto@mail<br>テストパスワード：tesuto</p>'  +
-//        '</div>' 
-//  }
-//  function mouseout4(){
-//    document.getElementById("footer__box").innerHTML = 
-//        '<div class="footer__box__left" id="footer__box__left">' +
-//        '</div>' +
-//        '<div class="footer__box__right" id="footer__box__right">' +
-//        '</div>' 
-//  }
+  function mouseover4(){
+    document.getElementById("footer__box").innerHTML = 
+        '<div class="footer__box__left" id="footer__box__left">' +
+          '<img src="images/muscle-training.jpg" alt="サンプル画像" class="footer__box__left">' +
+        '</div>' +
+        '<div class="footer__box__right" id="footer__box__right">' +
+          '<p class="footer__box__right">筋トレ紹介サイト：<br>JSを使用し動きのあるサイトを作ってみたく作成しました。<br>筋トレを行っているので初心者の方向けに参考サイトを作成してみました。</p>'  +
+        '</div>' 
+  }
+  function mouseout4(){
+    document.getElementById("footer__box").innerHTML = 
+        '<div class="footer__box__left" id="footer__box__left">' +
+        '</div>' +
+        '<div class="footer__box__right" id="footer__box__right">' +
+        '</div>' 
+  }
 
 
